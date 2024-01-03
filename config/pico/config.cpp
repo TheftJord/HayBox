@@ -24,13 +24,13 @@ size_t backend_count;
 KeyboardMode *current_kb_mode = nullptr;
 
 GpioButtonMapping button_mappings[] = {
-    {&InputState::l,            5 },
+    {&InputState::l,            17},
     { &InputState::left,        4 },
     { &InputState::down,        3 },
     { &InputState::right,       2 },
 
-    { &InputState::mod_x,       6 },
-    { &InputState::mod_y,       7 },
+    { &InputState::mod_x,       7 },
+    { &InputState::mod_y,       5 },
 
     { &InputState::select,      10},
     { &InputState::start,       0 },
@@ -38,19 +38,19 @@ GpioButtonMapping button_mappings[] = {
 
     { &InputState::c_left,      13},
     { &InputState::c_up,        12},
-    { &InputState::c_down,      15},
-    { &InputState::a,           14},
+    { &InputState::c_down,      14},
+    { &InputState::a,           26},
     { &InputState::c_right,     16},
 
-    { &InputState::b,           26},
-    { &InputState::x,           21},
-    { &InputState::z,           19},
-    { &InputState::up,          17},
+    { &InputState::b,           21},
+    { &InputState::x,           27},
+    { &InputState::z,           15},
+    { &InputState::up,          6 },
 
-    { &InputState::r,           27},
+    { &InputState::r,           19},
     { &InputState::y,           22},
-    { &InputState::lightshield, 20},
-    { &InputState::midshield,   18},
+    { &InputState::lightshield, 18},
+    { &InputState::midshield,   20},
 };
 size_t button_count = sizeof(button_mappings) / sizeof(GpioButtonMapping);
 
